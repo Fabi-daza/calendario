@@ -16,10 +16,11 @@ body{
     border-radius: 10px;
     border: 1px solid;
     margin: 0 auto;
+    height: 60vh;
 }
 .tabla-calendario td{
-    width:70px;
-    height: 70px;
+    width:10%;
+    height: 10%;
     border: 1px solid #ccc;
     vertical-align: top;
     padding: 10px;
