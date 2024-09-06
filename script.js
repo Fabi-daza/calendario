@@ -74,3 +74,24 @@ function llenadoCalendario(semanas){
 
     body.innerHTML = contenidoHTML
 }
+
+function getYears(){
+    const years = []
+    initialYear = new Date().getFullYear() - 100
+    finalYear = new Date().getFullYear() + 10
+    
+    for(initialYear; initialYear <= finalYear ; initialYear++){
+        years.push(initialYear)
+    }
+
+    const yearSelect = document.getElementById('year');
+    yearSelect.innerHTML = '<option value="" >Año</option>'
+
+    years.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year
+        yearSelect.appendChild(option);
+    })
+}
+getYears();

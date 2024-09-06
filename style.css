@@ -46,3 +46,16 @@ body{
 .tabla-calendario tr:first-child th:first-child{
     border-radius: 10px 0px 0px 0px;
 }
+.selectores{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+select {
+    width: 35%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
